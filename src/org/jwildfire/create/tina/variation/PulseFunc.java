@@ -36,11 +36,9 @@ public class PulseFunc extends VariationFunc implements SupportsGPU {
   private double scaley = 1.0;
 
   @Override
-  public void transform(FlameTransformationContext pContext, XForm pXForm, XYZPoint pAffineTP, XYZPoint pVarTP,
-                        // Lozi by TyrantWave
-                        // https://www.deviantart.com/tyrantwave/art/Henon-and-Lozi-Apo-Plugins-125039554
-                        double pAmount) {
-
+  public void transform(FlameTransformationContext pContext, XForm pXForm, XYZPoint pAffineTP, XYZPoint pVarTP, double pAmount) {
+                        // Pulse by FarDareisMai
+                        // https://www.deviantart.com/fardareismai/art/Apophysis-Plugin-Pulse-205212332
 
     pVarTP.x += pAmount * (pAffineTP.x + scalex * sin(pAffineTP.x * freqx));
     pVarTP.y += pAmount * (pAffineTP.y + scaley * sin(pAffineTP.y * freqy));
