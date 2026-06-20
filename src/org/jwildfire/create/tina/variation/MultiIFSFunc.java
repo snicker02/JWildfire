@@ -1501,7 +1501,7 @@ public class MultiIFSFunc extends VariationFunc {
     pVarTP.x += nx * pAmount;
     pVarTP.y += ny * pAmount;
     
-    if (!pContext.isPreserveZCoordinate()) {
+    if (pContext.isPreserveZCoordinate()) {
         pVarTP.z += pAffineTP.z * pAmount;
     }
   }
